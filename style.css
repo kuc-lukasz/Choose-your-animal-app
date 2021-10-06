@@ -1,0 +1,46 @@
+body{
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+.all-app{
+    border: 4px solid black;
+    width: 500px;
+    min-height: 700px;
+    display: flex;
+justify-content: flex-start;
+align-items: center;
+flex-direction: column;
+padding: 20px;
+margin: 20px;
+}
+.fav-animal{
+    border: 2px solid black;
+    width: 300px;
+    height: 50px;
+    display: flex;
+    padding: 20px;
+    margin: 20px;
+
+}
+.animals {
+    border: 2px solid black;
+    width: 450px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 20px;
+    
+}
+.animal {
+    border: 2px solid black;
+    width: 150px;
+    height: 50px;
+    margin: 15px;
+    padding: 15px;
+    display: inline-block;
+    text-align: center;
+
+}
