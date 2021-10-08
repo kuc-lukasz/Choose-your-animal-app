@@ -1,7 +1,7 @@
-const favAnimal = document.querySelector('.fav-animal')
-const animalsWindow = document.querySelector(".animals")
-const animal = document.querySelector('.animal')
-const addBtn = document.querySelector(".btn-add")
+const favAnimal = document.querySelector(".fav-animal");
+const animalsWindow = document.querySelector(".animals");
+const animal = document.querySelector(".animal");
+const addBtn = document.querySelector(".btn-add");
 
 // animalsWindow.addEventListener('click', (e) =>{
 // console.log(e)
@@ -12,7 +12,7 @@ const addBtn = document.querySelector(".btn-add")
 // addBtn.addEventListener('click', () => {
 //     const newAnimal = prompt('Write animal');
 //     if(newAnimal === null || newAnimal.trim() === "" ){
-//         return 
+//         return
 //     } else {
 //     const newAnimalBox = document.createElement('div')
 //     newAnimalBox.textContent = newAnimal
@@ -22,20 +22,18 @@ const addBtn = document.querySelector(".btn-add")
 
 // })
 
-
 animalsWindow.addEventListener("click", function (e) {
-console.log(e)
-const favAnOnTheTop = e.target.textContent
-favAnimal.innerText = favAnOnTheTop
-})
+  if (e.target && e.target.matches('div.animal'))   {
+    console.log(e);
+    const favAnOnTheTop = e.target.textContent;
+    favAnimal.innerText = favAnOnTheTop;
+  }
+});
 
-addBtn.addEventListener('click', () => {
-const newAnimal = prompt('Wpisz zwierze')
-const newBox = document.createElement('div')
-newBox.classList.add('animal')
-newBox.innerText = newAnimal
-animalsWindow.appendChild(newBox)
-
-
-
-})
+addBtn.addEventListener("click", () => {
+  const newAnimal = prompt("Wpisz zwierze");
+  const newBox = document.createElement("div");
+  newBox.classList.add("animal");
+  newBox.innerText = newAnimal;
+  animalsWindow.appendChild(newBox);
+});
